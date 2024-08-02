@@ -13,17 +13,62 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(90, 89, 89);
+    background-color: #5a5858;
     height: 100px;
 }
 
 .main-section {
     display: flex;
-    height: 50svh;
+    height: 60svh;
     width: 100%;
     background-color: #5a5858;
     justify-content: center;
     align-items: center;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 285px;
+}
+
+.wave .shape-fill {
+    fill: #5A5858;
+}
+
+.title-reader{
+    margin: 10px;
+}
+
+.bottom-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.bottom-waves .shape-fill {
+    fill: #5A5858;
 }
 
 .spacer {
@@ -61,8 +106,31 @@ header {
     align-items: center;
     background-color: rgb(255, 255, 255);
     transition: 1s;
+    position: relative;
 }
 
+
+.btn-send{
+    padding: 10px;
+    width: 70px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s ease-in-out ;
+}
+
+.btn-send:hover{
+    background-color: #5A5858;
+    color: white;
+    transform: scale(1.2);
+}
+
+.btn-send:disabled:hover {
+    background-color: #ccc; /* Mantém a mesma cor de fundo quando desativado */
+    color: #666; /* Mantém a mesma cor do texto quando desativado */
+    transform: none; /* Garante que nenhuma transformação é aplicada */
+}
 
 
 .middle-container {
@@ -76,6 +144,8 @@ header {
     gap: 30px;
 
 }
+
+
 
 .input-chat {
     width: 200px;
