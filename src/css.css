@@ -46,7 +46,7 @@ header {
     fill: #5A5858;
 }
 
-.title-reader{
+.title-reader {
     margin: 10px;
 }
 
@@ -111,26 +111,29 @@ header {
 }
 
 
-.btn-send{
+.btn-send {
     padding: 10px;
     width: 70px;
     font-size: 1.1rem;
     background-color: transparent;
     cursor: pointer;
     z-index: 1;
-    transition: 0.5s ease-in-out ;
+    transition: 0.5s ease-in-out;
 }
 
-.btn-send:hover{
+.btn-send:hover {
     background-color: #5A5858;
     color: white;
     transform: scale(1.2);
 }
 
 .btn-send:disabled:hover {
-    background-color: #ccc; /* Mantém a mesma cor de fundo quando desativado */
-    color: #666; /* Mantém a mesma cor do texto quando desativado */
-    transform: none; /* Garante que nenhuma transformação é aplicada */
+    background-color: #ccc;
+    /* Mantém a mesma cor de fundo quando desativado */
+    color: #666;
+    /* Mantém a mesma cor do texto quando desativado */
+    transform: none;
+    /* Garante que nenhuma transformação é aplicada */
 }
 
 
@@ -147,11 +150,12 @@ header {
 }
 
 
-nav{
+nav {
     display: flex;
     gap: 20px;
 }
-nav > a{
+
+nav>a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -159,7 +163,7 @@ nav > a{
     transition: 0.5s ease-in-out;
 }
 
-nav > a:hover{
+nav>a:hover {
     color: white;
     transform: scale(1.1);
 }
@@ -173,10 +177,43 @@ nav > a:hover{
 }
 
 .result {
-    max-width: 200px;
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     text-align: center;
     padding: 5px;
+    border: black 1px solid;
+    background-color: white;
+
+}
+
+.letter {
+    font-weight: bold;
+    margin: 0 0.2rem;
+    display: inline-block;
+    animation: float 1.6s ease-in-out infinite;
+    text-shadow: 1px 1px black;
+}
+
+#letterS { color: #5E8CDC}
+#letterE { color: #4DFFFC}
+#letterN { color: #FFED4D}
+#letterT { color: #d019d0}
+#letterI { color: #4DFF77}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

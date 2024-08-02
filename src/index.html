@@ -9,54 +9,69 @@
 </head>
 
 <body>
-   
-        <header>
-            <h1 class="logo">Text <Span class="logo-secondary">Oracle</Span></h1>
-            <nav>
-                <a href="#appContainer">Leitor</a>
-                <a href="">Contato</a>
-            </nav>
-        </header>
 
-        <section class="main-section" id="main-section">
-            <h1 class="middlePage-text">Revele os segredos ocultos do seu texto...
+    <header>
+        <h1 class="logo">Text <Span class="logo-secondary">Oracle</Span></h1>
+        <nav>
+            <a href="#appContainer">Leitor</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
 
-                Digite seu texto abaixo e deixe o oráculo (IA) analisar. Ele revelará se as emoções expressas são positivas,
-                negativas ou neutras utilizando da Api <a href="https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment">bert-base-multilingual-uncased-sentiment</a>
+    <section class="main-section" id="main-section">
+        <h1 class="middlePage-text">Revele os segredos ocultos do seu texto...
 
-            </h1>
+            Digite seu texto abaixo e deixe o oráculo (IA) analisar. Ele revelará se as emoções expressas são positivas,
+            negativas ou neutras utilizando da Api <a
+                href="https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment">bert-base-multilingual-uncased-sentiment</a>
+
+        </h1>
 
 
-        </section>
+    </section>
 
-        <section class="app-container" id="appContainer">
-   
-       
-            <h1 class="title-reader">Leitor De Sentimentos</h1>
-            <div class="middle-container">
+    <section class="app-container" id="appContainer">
 
-                <textarea name="" id="screen" readonly class="result"></textarea>
 
-                <input class="input-chat" type="text" id="input-text">
-                <button id="buttonSend" class="btn-send">enviar</button>
-            </div>
+        <h1 class="title-reader">Leitor De  
+            <span class="letter" id="letterS" style="animation-delay: 0.1s;">S</span>
+            <span class="letter" id="letterE" style="animation-delay: 0.1s;">e</span>
+            <span class="letter" id="letterN" style="animation-delay: 0.2s;">n</span>
+            <span class="letter" id="letterT" style="animation-delay: 0.3s;">t</span>
+            <span class="letter" id="letterI" style="animation-delay: 0.4s;">i</span>
+            <span class="letter" id="letterM" style="animation-delay: 0.5s;">m</span>
+            <span class="letter" id="letterE" style="animation-delay: 0.6s;">e</span>
+            <span class="letter" id="letterN" style="animation-delay: 0.7s;">n</span>
+            <span class="letter" id="letterT" style="animation-delay: 0.8s;">t</span>
+            <span class="letter" id="letterO" style="animation-delay: 0.9s;">o</span>
+        </h1>
+        <div class="middle-container">
 
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
+            <div id="screen" readonly class="result"></div>
 
-            <div class="bottom-waves">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-           
-        </section>
+            <input class="input-chat" type="text" id="input-text">
+            <button id="buttonSend" class="btn-send">enviar</button>
+        </div>
+
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="bottom-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
 
 
 
