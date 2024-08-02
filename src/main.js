@@ -1,10 +1,3 @@
-// import { pipeline } from "@xenova/transformers";
-
-// const pipe = await pipeline("sentiment-analysis");
-// const out = await pipe("eu odeio você");
-
-// console.log(out);
-
 
 const buttonSend = document.getElementById('buttonSend')
 const screen = document.getElementById('screen')
@@ -45,7 +38,7 @@ buttonSend.addEventListener('click', () => {
     if (chat) {
         return queryData({ inputs: chat }).then((response) => {
             let data = response[0]
-
+            console.log(data)
             if (data[0].label === '1 star') {
                 screen.innerHTML = `O texto representa uma emoção muito negativa`
                 appContainer.style.backgroundColor = '#5E8CDC'
@@ -72,7 +65,7 @@ buttonSend.addEventListener('click', () => {
                 appContainer.style.backgroundColor = '#4DFF77'
                 return
             }
-            console.log(data[0])
+            
         })
     }
 

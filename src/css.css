@@ -94,7 +94,8 @@ header {
 .middlePage-text {
     text-align: center;
     padding: 20px;
-    font-size: 40px;
+    font-size: 2rem;
+    width: 800px;
 }
 
 .app-container {
@@ -143,6 +144,24 @@ header {
     align-items: center;
     gap: 30px;
 
+}
+
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+nav > a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: violet;
+    transition: 0.5s ease-in-out;
+}
+
+nav > a:hover{
+    color: white;
+    transform: scale(1.1);
 }
 
 
