@@ -2,7 +2,7 @@
 const buttonSend = document.getElementById('buttonSend')
 const screen = document.getElementById('screen')
 const appContainer = document.getElementById('appContainer')
-
+const topButton = document.querySelector(".top")
 
 
 
@@ -77,7 +77,12 @@ buttonSend.addEventListener('click', () => {
 
 })
 
+window.addEventListener("scroll", () =>{
+    if(scrollY > 100){
+        topButton.classList.add("active")
+    }else{
+        topButton.classList.remove("active")
+    }
+})
 
-// queryData({ inputs: 'i hate it' }).then((response) => {
-//     console.log(JSON.stringify(response))
-// })
+
