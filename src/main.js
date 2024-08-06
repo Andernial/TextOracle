@@ -25,7 +25,7 @@ async function queryData(data) {
         const result = (await request).json();
         return result
     } catch (error) {
-        return console.log(error)
+        return screen.innerHTML = `Ocorreu um erro na api`
     } finally {
         buttonSend.disabled = false
     }
@@ -37,6 +37,10 @@ buttonSend.addEventListener('click', () => {
     const chat = document.getElementById('input-text').value
     if (chat) {
         return queryData({ inputs: chat }).then((response) => {
+
+            if(response.length < 1){
+                return screen.innerHTML = `Ocorreu um erro na api`
+            }
             let data = response[0]
             console.log(data)
             if (data[0].label === '1 star') {
@@ -68,7 +72,7 @@ buttonSend.addEventListener('click', () => {
             
         })
     }
-
+    screen.innerHTML = `Preencha a caixa de texto!`
     console.log('nenhum dado no chat')
 
 })
