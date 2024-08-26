@@ -30,6 +30,10 @@ header {
     align-items: center;
 }
 
+.title-link {
+    text-decoration: none;
+}
+
 .wave {
     position: absolute;
     top: 0;
@@ -215,13 +219,13 @@ footer {
     transition: all .4s;
 }
 
-.top.active{
-    bottom:32px;
+.top.active {
+    bottom: 32px;
     pointer-events: auto;
     opacity: 1;
 }
 
-.arrow{
+.arrow {
     height: 30px;
     width: 30px;
 }
