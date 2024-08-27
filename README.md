@@ -19,5 +19,12 @@ Html/Css + JS
 ## BackEnd 🔙​
 Para a leitura de chat foi utilizada da api [bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
 
+## Resultados
+![image](https://github.com/user-attachments/assets/ac825d2d-2581-498d-b841-7b76471cf52c)
+
+![image](https://github.com/user-attachments/assets/8f14c200-b445-46a1-af28-0632f82b6ee1)
+
+
+
 ## Considerações Finais 📦​
 Com o tempo pretendo ir testando mais modelos de ia do site Hugging Face e ir adicionando a este projeto.
