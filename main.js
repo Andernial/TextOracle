@@ -4,7 +4,7 @@ const screen = document.getElementById('screen')
 const appContainer = document.getElementById('appContainer')
 const topButton = document.querySelector(".top")
 
-
+const apiKey = 'sua api key'
 
 
 async function queryData(data) {
@@ -14,7 +14,7 @@ async function queryData(data) {
 
             {
                 headers: {
-                    Authorization: 'Bearer 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'
+                    Authorization: `Bearer ${apiKey}`
                 },
                 method: 'POST',
                 body: JSON.stringify(data)
