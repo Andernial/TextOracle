@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Pokemon';
-    src: url(.src/fonts/power\ red\ and\ blue.ttf);
+    src: url(./src/fonts/power\ red\ and\ blue.ttf);
 }
 
 * {
@@ -88,7 +88,7 @@ header {
 }
 
 .layer1 {
-    background-image: url(.src/images/wave.svg);
+    background-image: url(./src/images/wave.svg);
 }
 
 .logo {
